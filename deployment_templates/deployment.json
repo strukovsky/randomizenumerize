@@ -10,18 +10,18 @@
       "name": "fgsdgjsndfgjknfsdkg",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png",
       "homepageTrigger": {
-        "runFunction": "https://6ab3-92-38-32-98.ngrok.io"
+        "runFunction": "%url_host%"
       }
     },
     "gmail": {
       "homepageTrigger": {
-        "runFunction": "https://6ab3-92-38-32-98.ngrok.io/gmail_homepage",
+        "runFunction": "%url_host%/gmail_homepage",
         "enabled": true
       },
       "composeTrigger": {
         "actions": [
           {
-            "runFunction": "https://6ab3-92-38-32-98.ngrok.io/gmail_compose",
+            "runFunction": "%url_host%/gmail_compose",
             "label": "Compose"
           }
         ],
@@ -29,7 +29,7 @@
       },
       "contextualTriggers": [
         {
-          "onTriggerFunction": "https://6ab3-92-38-32-98.ngrok.io/gmail_opened",
+          "onTriggerFunction": "%url_host%/gmail_opened",
           "unconditional": {
 
           }

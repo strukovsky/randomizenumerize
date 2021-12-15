@@ -1,10 +1,9 @@
-from flask import (
-    Flask,
-    request
-)
+from flask import (Flask, request)
 from random import randint
 import template_engine
 import json
+from google.oauth2.credentials import Credentials
+
 app = Flask(__name__)
 
 
@@ -28,8 +27,7 @@ def gmail_compose():
 @app.route("/gmail_opened", methods=['POST'])
 def gmail_opened():
     data = json.loads(request.data)
-    print(data)
-    return template_engine.render("index.json")
+    return template_engine.render("gmail_opened.json", message_id=data['gmail']['messageId'])
 
 
 if __name__ == "__main__":

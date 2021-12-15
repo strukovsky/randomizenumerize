@@ -4,15 +4,15 @@
       {
         "pushCard": {
           "header": {
-            "title": "Random number v3!"
+            "title": "Main page of app"
           },
           "sections": [
             {
               "widgets": [
                 {
                   "decoratedText": {
-                    "topLabel": "Your random number is",
-                    "text": "%first%"
+                    "topLabel": "This is test",
+                    "text": "really"
                   }
                 }
 

@@ -1,4 +1,5 @@
-
+path+=('/Users/dmitry/Documents/Programmation/GoogleCloud/gcloud_sdk/bin')
+export PATH
 project_name="random-generator-334612";
 deployment_file="deployment.json"
 gcloud workspace-add-ons deployments replace $project_name --deployment-file=$deployment_file;

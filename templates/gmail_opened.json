@@ -1,0 +1,25 @@
+{
+    "action": {
+      "navigations": [
+        {
+          "pushCard": {
+            "header": {
+              "title": "Gmail to MyGmailer sender"
+            },
+            "sections": [
+              {
+                "widgets": [
+                  {
+                    "decoratedText": {
+                      "topLabel": "ID of selected message is",
+                      "text": "%message_id%"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
