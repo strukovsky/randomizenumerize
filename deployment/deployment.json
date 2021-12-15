@@ -1,0 +1,45 @@
+{
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.metadata",
+    "https://www.googleapis.com/auth/gmail.readonly"
+  ],
+  "addOns": {
+    "common": {
+      "name": "fgsdgjsndfgjknfsdkg",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png",
+      "homepageTrigger": {
+        "runFunction": "https://7985-92-38-32-98.ngrok.io"
+      }
+    },
+    "gmail": {
+      "homepageTrigger": {
+        "runFunction": "https://7985-92-38-32-98.ngrok.io/gmail_homepage",
+        "enabled": true
+      },
+      "composeTrigger": {
+        "actions": [
+          {
+            "runFunction": "https://7985-92-38-32-98.ngrok.io/gmail_compose",
+            "label": "Compose"
+          }
+        ],
+        "draftAccess": "METADATA"
+      },
+      "contextualTriggers": [
+        {
+          "onTriggerFunction": "https://7985-92-38-32-98.ngrok.io/gmail_opened",
+          "unconditional": {
+
+          }
+        }
+      ]
+    },
+    "drive": {},
+    "calendar": {},
+    "docs": {},
+    "sheets": {},
+    "slides": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "action": {
+    "navigations": [
+      {
+        "pushCard": {
+          "header": {
+            "title": "Gmail to MyGmailer sender"
+          },
+          "sections": [
+            {
+              "widgets": [
+                {
+                  "decoratedText": {
+                    "topLabel": "This message will be sent to server",
+                    "text": "Select any message to send"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

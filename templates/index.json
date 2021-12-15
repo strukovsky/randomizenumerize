@@ -1,0 +1,26 @@
+{
+  "action": {
+    "navigations": [
+      {
+        "pushCard": {
+          "header": {
+            "title": "Random number v3!"
+          },
+          "sections": [
+            {
+              "widgets": [
+                {
+                  "decoratedText": {
+                    "topLabel": "Your random number is",
+                    "text": "%first%"
+                  }
+                }
+
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
