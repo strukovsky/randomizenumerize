@@ -1,7 +1,7 @@
 from os import path
 
 
-def render(filename, template_dir="templates", **kwargs):
+def render(filename, template_dir="templates", **kwargs) -> str:
     template_file = path.join(template_dir, filename)
     with open(template_file, "r") as file:
         contents = file.read()
